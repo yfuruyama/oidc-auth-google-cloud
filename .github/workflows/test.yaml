@@ -34,6 +34,7 @@ jobs:
       with:
         workload_identity_provider: 'projects/483655698878/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
         service_account: 'workload-identity-federation@furuyama-test-a.iam.gserviceaccount.com'
+        id_token_audience: 'foo'
 
     - name: 'npm install'
       run: 'npm install'
